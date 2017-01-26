@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Weather";
+    ViewData["PerPageJS"] = "<script type=\"text/javascript\" src=\"/Scripts/OpenWeather.js\"></script>";
+}
+
+<h2>Weather</h2>
+
+<form id="weatherForm">
+    <div class="form-group">
+        <label for="exampleZipCode">Zip Code</label>
+        <input name="zip" class="form-control" id="zipcode" placeholder="Zip Code">
+    </div>
+    
+    <a id="formSubmit" class="btn btn-default">Submit</a>
+</form>
+
+
+
+<h2>Result</h2>
+<p id="weatherResult"></p>
