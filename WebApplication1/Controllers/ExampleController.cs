@@ -66,6 +66,7 @@ namespace WebApplication1.Controllers
                      {
                         reader = new StreamReader(responseStream);
                         responseString = reader.ReadToEnd();
+                        //
                     }
                  }
                 return Json(new { response = responseString });
